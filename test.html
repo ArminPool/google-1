@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <title>工具模块索引</title>
+    <style type="text/css">
+    div {
+        height: 500px;
+    }
+    .aside {
+        width: 200px;
+        float: left;
+    }
+    .content {
+        margin-left: 200px;
+    }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    
+    <script type="text/javascript">
+    var ul = document.querySelector('ul');
+
+    ul.addEventListener('click', function (event) {
+        var target = event.target;
+        for (var i = ul.children.length - 1; i >= 0; --i) {
+            if (target === ul.children[i]) {
+                alert(i);
+            }
+        }
+    }, false);
+
+
+
+    </script>
+</body>
+</html>
