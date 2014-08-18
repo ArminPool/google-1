@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<input id="target"/>
 <h1>Jacqui's Flower Shop</h1>
 <form method="post">
 <div id="oblock">
@@ -42,6 +43,25 @@
 </div>
 <div id="buttonDiv"><button type="submit">Place Order</button></div>
 </form>
+
+<div id="target"><span>test</span></div>
   <script src="../jquery.js"></script>
+    <script type="text/javascript">
+    $.holdReady(true);
+    $(document).ready(function () {
+      console.log('ready event triggered');
+
+      $('img:odd').mouseenter(function (e) {
+        $(this).css('opacity', 0.5);
+      }).mouseout(function (e) {
+        $(this).css('opacity', 1.0);
+      });
+    });
+
+    setTimeout(function () {
+      console.log('releasing hold');
+      $.holdReady(false);
+    }, 5999);
+    </script>
 </body>
 </html>
