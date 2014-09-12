@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <title>工具模块索引</title>
+    <style>
+    #container {
+        margin: 50px;
+        width: 100px;
+        background-color: #DDD;
+
+        position: relative;
+    }
+
+    .tooltip {
+        position: absolute;
+
+        top: 100%;
+        margin-top: 10px;
+        left: 10px;
+
+        border: 1px solid #DDD;
+        white-space: nowrap;
+    }
+    .tooltip::before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: -10px;
+        left: 20px;
+
+        border-width: 0 10px 10px 10px;
+        border-color: transparent;
+        border-bottom-color: #DDD;
+        border-style: solid;
+    }
+    .tooltip::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: -9px;
+        left: 21px;
+
+        border-style: solid;
+        border-width: 0 9px 9px 9px;
+        border-color: transparent transparent #FFF transparent;
+    }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        测试
+    </div>
+
+    <div class="tooltip">
+        上铺装修新功能上线！<a href="#">我知道了</a><span>X</span>
+    </div>
+
+    <script src="module/js/jquery.js"></script>
+
+    <script type="text/javascript">
+    var tooltip = document.querySelector('.tooltip');
+    var target = document.getElementById('container');
+    target.appendChild(tooltip);
+    </script>
+
+</body>
+</html>
