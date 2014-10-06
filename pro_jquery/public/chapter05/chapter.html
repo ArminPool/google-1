@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Index</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<input id="target"/>
+<h1>Jacqui's Flower Shop</h1>
+<form method="post">
+<div id="oblock">
+<div class="dtable">
+<div id="row1" class="drow">
+<div class="dcell">
+<img src="img/astor.png"/><label for="astor">Astor:</label>
+<input name="astor" value="0" required>
+</div>
+<div class="dcell">
+<img src="img/daffodil.png"/><label for="daffodil">Daffodil:</label>
+<input name="daffodil" value="0" required >
+</div>
+<div class="dcell">
+<img src="img/rose.png"/><label for="rose">Rose:</label>
+<input name="rose" value="0" required>
+</div>
+</div>
+<div id="row2" class="drow">
+<div class="dcell">
+<img src="img/peony.png"/><label for="peony">Peony:</label>
+<input name="peony" value="0" required>
+</div>
+<div class="dcell">
+<img src="img/primula.png"/><label for="primula">Primula:</label>
+<input name="primula" value="0" required>
+</div>
+<div class="dcell">
+<img src="img/snowdrop.png"/><label for="snowdrop">Snowdrop:</label>
+<input name="snowdrop" value="0" required>
+</div>
+</div>
+</div>
+</div>
+<div id="buttonDiv"><button type="submit">Place Order</button></div>
+</form>
+
+<div id="target"><span>test</span></div>
+  <script src="../jquery.js"></script>
+    <script type="text/javascript">
+    $.holdReady(true);
+    $(document).ready(function () {
+      console.log('ready event triggered');
+
+      $('img:odd').mouseenter(function (e) {
+        $(this).css('opacity', 0.5);
+      }).mouseout(function (e) {
+        $(this).css('opacity', 1.0);
+      });
+    });
+
+    setTimeout(function () {
+      console.log('releasing hold');
+      $.holdReady(false);
+    }, 5999);
+    </script>
+</body>
+</html>
