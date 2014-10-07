@@ -53,3 +53,5 @@
 - [module/image-slide/index.html](module/image-slide/index.html):图片轮播控件
 
 - [module/slide](module/slide):jquery,css3,html实现简单ppt功能
+
+- [module/flex-footer](module/flex-footer):css3 flex box实现rich footer

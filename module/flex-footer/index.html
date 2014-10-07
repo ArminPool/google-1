@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <style>
+    .rich-footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #EEE;
+    }
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+    #first {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 200px;
+        padding: 0.5em;
+        border-radius: 1em;
+        box-shadow: inset 1px 1px 3px #000;
+        position: relative;
+    }
+    #second {
+        order: 1;
+        flex-grow: 2;
+        flx-shrink: 3;
+        flex-basis: 300px;
+        padding: 0.5em;
+        border-radius: 1em;
+        box-shadow: inset 1px 1px 3px #000;
+        position: relative;
+    }
+    #third {
+        flex-grow: 1;
+        flex-shrink: 2;
+        flex-basis: 200px;
+        padding: 0.5em;
+        border-radius: 1em;
+        box-shadow: inset 1px 1px 3px #000;
+        position: relative;
+    }
+    </style>
+</head>
+<body>
+
+<div class="rich-footer">
+<footer>
+  <div id="first">
+    <h2>Contact</h2>
+    <p>Chris Mills,
+             Geeksville<br>
+             Arizona,
+             Earth</p>
+    <p>Email: <a href="mailto:cmills@opera.com">cmills@opera.com</a></p>
+  </div>
+  <div id="second">
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://dev.opera.com/articles/view/flexbox-basics/">Return to the flexbox article on dev.opera</a></li>
+      <li><a href="https://dev.opera.com">Go to the dev.opera.com homepage</a></li>
+      <li><a href="http://www.w3.org/TR/css3-flexbox/">Read the Flexbox specification</a></li>
+      <li><a href="http://www.opera.com">Visit Opera's homepage</a></li>
+      <li><a href="https://twitter.com/chrisdavidmills">Follow Chris Mills on Twitter</a></li>
+    </ul>
+
+  </div>
+  <div id="third">
+    <h2>Copyright</h2>
+    <p>This example is released under a public domain license. Please feel free to rip it off, learn from it, and make use of it!</p>
+  </div>
+</footer>
+</div>
+
+</body>
+</html>
