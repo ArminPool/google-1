@@ -47,21 +47,17 @@
 <div id="target"><span>test</span></div>
   <script src="../jquery.js"></script>
     <script type="text/javascript">
-    $.holdReady(true);
-    $(document).ready(function () {
-      console.log('ready event triggered');
-
-      $('img:odd').mouseenter(function (e) {
-        $(this).css('opacity', 0.5);
-      }).mouseout(function (e) {
-        $(this).css('opacity', 1.0);
-      });
+    $(function () {
     });
 
-    setTimeout(function () {
-      console.log('releasing hold');
-      $.holdReady(false);
-    }, 5999);
+    var Promise = function () {
+      this.thens = [];
+    };
+
+    Promise.prototype = {
+    };
+
+
     </script>
 </body>
 </html>

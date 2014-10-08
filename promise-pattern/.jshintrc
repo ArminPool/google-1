@@ -1,4 +1,4 @@
-module.exports = {
+{
     "bitwise": true,
     "camelcase": true,
     "curly": true,
@@ -70,4 +70,4 @@ module.exports = {
     "predef": [
         "qiu"
     ]
-};
+}

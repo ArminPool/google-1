@@ -4,40 +4,37 @@
     <meta charset="utf-8" />
     <title>工具模块索引</title>
     <style type="text/css">
-    div {
-        height: 500px;
-    }
-    .aside {
-        width: 200px;
-        float: left;
-    }
-    .content {
-        margin-left: 200px;
-    }
+
     </style>
 </head>
 <body>
 
-    <ul>
+    <ul id="target">
         <li>1</li>
         <li>2</li>
         <li>3</li>
     </ul>
     
     <script type="text/javascript">
-    var ul = document.querySelector('ul');
+    function addMask(dom, opacity) {
+        var parent = dom.offsetParent;
 
-    ul.addEventListener('click', function (event) {
-        var target = event.target;
-        for (var i = ul.children.length - 1; i >= 0; --i) {
-            if (target === ul.children[i]) {
-                alert(i);
-            }
-        }
-    }, false);
+        var mask = document.createElement("div");
+        mask.style.position = 'absolute';
+        mask.style.opacity = opacity || 0.2;
+        mask.style.left = dom.offsetLeft;
+        mask.style.top = dom.offsetTop;
 
+        var rect = dom.getBoundingClientRect();
+        mask.style.width = rect.right - rect.left;
+        mask.style.height = rect.bottom = rect.top;
+        rect.style.zIndex = 9999;
 
+        parent.appendChild(mask);
 
+    }
+
+    addMask(document.getElementById('target'));
     </script>
 </body>
 </html>

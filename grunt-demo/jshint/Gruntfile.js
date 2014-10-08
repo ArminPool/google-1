@@ -1,10 +1,10 @@
+
+var opt = require('./jshint-strict-options');
+
 module.exports = function (grunt){
     grunt.initConfig({
         jshint: {
-            options: {
-                eqeqeq: true, // 比较相等时强制使用===
-                curly: true // if while for等后面必须有大括号，包裹所有对应代码
-            },
+            options: opt,
             // 配置target：检查所有文件
             all: {
                 src: ['index.js', 'src/*.js']

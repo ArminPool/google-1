@@ -10,6 +10,7 @@ function app(aaa) {
 
 */
 
+/* exported app */
 function app(aaa) {
     $(aaa);
 
