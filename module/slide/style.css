@@ -29,16 +29,9 @@ body {
     -webkit-transition: all 1s linear;
             transition: all 1s linear;
 
-/* flex box忘光光了。主要是居中*/
-        display: -webkit-box;
-    -webkit-box-align: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-pack: center;
- 
-    display: box;
-    box-align: center;
-    box-orient: horizontal;
-    box-pack: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #slides h1,
