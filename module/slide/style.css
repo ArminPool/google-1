@@ -1,0 +1,59 @@
+/* 渐变也忘记了。。*/
+body {
+    background-image: -webkit-gradient(
+        radial,
+        50% 50%, 0,
+        50% 50%, 1000,
+        from(rgba(245, 245, 245, 1)),
+        to(rgba(100, 100, 100, 1))
+    );
+}
+
+.wrap {
+    margin: auto;
+    width: 1180px;
+    overflow: hidden;
+}
+
+#slides {
+    width: 999999px;
+}
+
+#slides > div {
+    height: 600px;
+    width: 1180px;
+    float: left;
+    margin-right: 200px;
+    text-align: center;
+
+    -webkit-transition: all 1s linear;
+            transition: all 1s linear;
+
+/* flex box忘光光了。主要是居中*/
+        display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+ 
+    display: box;
+    box-align: center;
+    box-orient: horizontal;
+    box-pack: center;
+}
+
+#slides h1,
+#slides h2,
+#slides h3,
+#slides h4,
+#slides h5 {
+    color: #292929;
+    font-family: "League Gothic", sans-serif;
+    margin-top: 0;
+    text-shadow: 2px 3px 0 white;
+}
+
+#slides > div h3 {
+    font-size: 180px;
+    line-height: 1em;
+    margin: 0;
+}
