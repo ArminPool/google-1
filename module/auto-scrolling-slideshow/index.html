@@ -5,12 +5,14 @@
     <title>Tabbed jquery slideshow</title>
     <link rel="stylesheet" href="slideshow.css">
     <script src="../../js/jquery.js"></script>
+    <script src="js/jquery.cycle.all.js"></script>
+    <script src="js/slideshow.js"></script>
 </head>
 <body>
     <div id="slideshow">
         <div class="slides">
             <ul>
-                <li>
+                <li id="slide-one">
                     <h2>Slide one</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -20,7 +22,7 @@
                         sit amet, venenatis et, dui.
                     </p>
                 </li>
-                <li>
+                <li id="slide-two">
                     <h2>Slide two</h2>
                     <p>
                         Nam ac nibh sit amet augue ultricies sagittis. Donec sit 
@@ -30,7 +32,7 @@
                         nascetur ridiculus mus.
                     </p>
                 </li>   
-                <li>
+                <li id="slide-three">
                     <h2>Slide three</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -42,9 +44,9 @@
             </ul>
         </div>
         <ul class="slides-nav">
-            <li><a href="#">Slide one</a></li>
-            <li><a href="#">Slide two</a></li>
-            <li><a href="#">Slide three</a></li>
+            <li><a href="#slide-one">Slide one</a></li>
+            <li><a href="#slide-two">Slide two</a></li>
+            <li><a href="#slide-three">Slide three</a></li>
         </ul>
     </div>
 </body>

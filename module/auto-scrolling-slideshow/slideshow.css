@@ -1,18 +1,17 @@
 html {
-    font-size: 76%;
+    font-size: 75%;
 }
 
 body {
-    font-family: arial, Helvetica, sans-serif;
+    font-family: arial, helvetica, sans-serif;
     line-height: 1.4em;
     font-size: 1.2em;
     padding: 5%;
 }
-
 #slideshow {
     width: 960px;
     background-color: #eee;
-    border: 1px solid #DDD;
+    border: 1px solid #ddd;
 }
 
 #slideshow ul {
@@ -23,15 +22,13 @@ body {
 }
 
 #slideshow ul:after {
-    content: ".";
+    content: " ";
+    display: table;
     clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
 }
 
 #slideshow .slides {
-    overflwo: hidden;
+    overflow: hidden;
     width: 960px;
 }
 
@@ -50,8 +47,8 @@ body {
 }
 
 #slideshow .slides-nav {
-    background-color: #DDD;
-    border-top: 2px solid #CCC;
+    background-color: #ddd;
+    border-top: 2px solid #ccc;
 }
 
 #slideshow .slides-nav li {
@@ -62,4 +59,14 @@ body {
     display: block;
     padding: 15px 20px;
     outline: none;
+}
+
+#slideshow .slides-nav li.on,
+#slideshow .slides-nav li.on a {
+    background-color: #eee;
+}
+
+#slideshow .slides-nav li.on a {
+    position: relative;
+    top: -4px;
 }
