@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS3 animated pre loaders</title>
+    <style type="text/css">
+    /* 声波 */
+    #preloader_1 {
+        position: relative;
+    }
+    #preloader_1 span {
+        display: block;
+        bottom: 0;
+        width: 9px;
+        height: 5px;
+        background-color: #9b59b6;
+        position: absolute;
+        animation: preloader_1 1.5s infinite ease-in-out;
+    }
+    #preloader_1 span:nth-child(2) {
+        left: 11px;
+        animation-delay: 0.2s;
+    }
+    #preloader_1 span:nth-child(3) {
+        left: 22px;
+        animation-delay: 0.4s;
+    }
+    </style>
+</head>
+<body>
+    <div id="preloader_1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</heml>

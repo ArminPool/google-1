@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tabbed jquery slideshow</title>
+    <style>
+    .slides {
+        width: 800px;
+        background-color: #eee;
+        border: 1px solid #ddd;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .slides li {
+        display: inline-block;
+        width: 800px;
+        white-space: normal;
+    }
+    .slides-nav {
+        list-style: none;
+        background-color: #ddd;
+        margin: 0;
+        padding: 0;
+        *zoom: 1;
+    }
+    .slides-nav:after,
+    .slides-nav:before {
+        display: table;
+        content: " ";
+    }
+    .slides-nav:after {
+        clear: both;
+    }
+    .slides-nav li {
+        float: left;
+    }
+    .slides-nav a {
+        display: block;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    </style>
+</head>
+<body>
+    <div id="slideshow">
+        <ul class="slides">
+            <li id="slide-one">
+                <h2>Slide one</h2>
+                <p>
+                slide one slide one slide oneslide oneslide oneslide oneslide oneslide one
+                </p>
+            </li>
+            <li id="slide-two">
+                <h2>Slide two</h2>
+                <p>Slide two slide twopsum dolor sit amet, consectetur adipiscing elit. 
+                        Donec pretium arcu non velit. Phasellus adipiscing auctor 
+                        lorem. Curabitur in urna ut purus consequat sollicitudin. 
+                        Phasellus ut diam. Cras
+                </p>
+            </li>
+            <li id="slide-three">
+                <h2>Slide Three</h2>
+                <p>psum dolor sit amet, consectetur adipiscing elit. 
+                        Donec pretium arcu non velit. Phasellus adipiscing auctor 
+                        lorem. Curabitur in urna ut purus consequat sollicitudin. 
+                        Phasellus ut diam. Cras</p>
+            </li>
+        </ul>
+        <ul class="slides-nav">
+            <li><a href="#slide-one">slide one</a></li>
+            <li><a href="#slide-two">slide two</a></li>
+            <li><a href="#slide-three">slide three</a></li>
+        </ul>
+    </div>
+</body>
+</html>

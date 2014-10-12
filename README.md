@@ -55,3 +55,32 @@
 - [module/slide](module/slide):jquery,css3,html实现简单ppt功能
 
 - [module/flex-footer](module/flex-footer):css3 flex box实现rich footer
+
+- [module/auto-scrolling-slideshow](module/auto-scrolling-slideshow):首先使用CSS和HTML实现基本tab效果,然后使用jquery.cycle.js增加循环切换效果
+
+- [module/css3-animated-pre-loaders](module/css3-animated-pre-loaders):css3实现加载动画1)声波
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
